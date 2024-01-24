@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: rgb(221, 213, 233);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER SECTION STARTS */
+
+nav {
+    padding: 0 20px;
+    background-color: rgb(172, 120, 246);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    border-bottom: 1px solid;
+    right: 34px;
+}
+
+nav .nav-items {
+    display: flex;
+}
+
+nav .nav-items li {
+    list-style: none;
+    padding: 0 15px;
+}
+
+nav .nav-items li a {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav .nav-items li a:hover {
+    color: rgb(221, 213, 233);
+}
+
+nav .logo {
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1px;
+
+}
+
+/* HEADER SECTION ENDS */
+
+
+/* ABOUT US SECTION STARTS */
+
+.about-container {
+    width: 85%;
+    min-height: 80vh;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: rgb(221, 213, 233);
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.text-container h1 {
+    font-size: 70px;
+    padding: 20px 0px;
+}
+
+/* ABOUT US SECTION ENDS */
+
+
+/* MEDIA QUERY STARTS */
+
+@media screen and (max-width: 1600px) {
+    .about-container {
+        width: 90%;
+    }
+
+    .image-container img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .text-container h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .image-container img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .text-container {
+        align-items: center;
+    }
+}
+
+/* MEDIA QUERY ENDS */
